@@ -1,5 +1,5 @@
 import math
-
+import random
 
 def test_greeting():
     """
@@ -49,11 +49,8 @@ def test_random_list():
     """
     Создайте список из 10 случайных чисел от 1 до 100 и отсортируйте его по возрастанию.
     """
-
     # TODO создайте список
-    l = [1, 23, 42, 67, 9, 13, 76, 58, 99, 54]
-    sorted(l)
-    l.sort()
+    l = sorted(random.sample(range(1, 100), 10))
     assert len(l) == 10
     assert l[0] < l[-1]
 
