@@ -53,7 +53,6 @@ def test_random_list():
     # TODO создайте список
     l = [1, 23, 42, 67, 9, 13, 76, 58, 99, 54]
     sorted(l)
-    print(len(l))
     l.sort()
     assert len(l) == 10
     assert l[0] < l[-1]
