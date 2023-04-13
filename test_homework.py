@@ -11,6 +11,7 @@ def test_greeting():
     output = f'Привет, {name}! Тебе {age} лет.'
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
+    print(output)
 
 
 def test_rectangle():
@@ -39,10 +40,12 @@ def test_circle():
     # TODO сосчитайте площадь
     area = (23 ** 2) * math.pi
     assert area == 1661.9025137490005
+    print(f'Площадь круга: {area}')
 
     # TODO сосчитайте длину окружности
     length = 2 * (r * math.pi)
     assert length == 144.51326206513048
+    print(f'Длина круга: {length}')
 
 
 def test_random_list():
