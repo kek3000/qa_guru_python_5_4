@@ -1,6 +1,7 @@
 import math
 import random
 
+
 def test_greeting():
     """
     Напишите программу, которая выводит на экран приветствие.
